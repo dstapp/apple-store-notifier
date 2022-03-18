@@ -8,4 +8,6 @@ Queries Apple Store availability for given stores and notifies via Pushover when
 Exchange `MONITORED_STORES` in the `docker-compose.yml` with a list of the Stores that you want to watch,
 then adjust `PUSHOVER_TOKEN` and `PUSHOVER_USER` to get notified.
 
+Easiest do run as a docker-compose project with `docker-compose up -d` afterwards.
+
 1 minute polling delay seems to be fine and I don't get blocked with three Apple Stores being queried.

@@ -5,7 +5,7 @@ services:
     build: .
     restart: unless-stopped
     environment:
-      PUSHOVER_ENABLED: 0
+      PUSHOVER_ENABLED: 1
       PUSHOVER_TOKEN: replaceme
       PUSHOVER_USER: replaceme
       MONITORED_PART_NO: MK0U3D/A # Standard Studio Display

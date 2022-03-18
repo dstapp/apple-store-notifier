@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  notifier:
+    build: .
+    restart: unless-stopped
+    environment:
+      PUSHOVER_ENABLED: 0
+      PUSHOVER_TOKEN: replaceme
+      PUSHOVER_USER: replaceme
+      MONITORED_PART_NO: MK0U3D/A # Standard Studio Display
+      MONITORED_STORES: R434,R352,R519 # MTZ, Frankfurt Zeil, Sindelfingen
+      POLLING_DELAY_SECONDS: 60

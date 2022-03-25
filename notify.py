@@ -69,6 +69,8 @@ def do_it(part_no, store_ids, **kwargs):
                     headers={"Content-Type": "application/x-www-form-urlencoded"},
                 )
 
+            f.truncate(0)
+            f.seek(0)
             f.write(availability_text)
 
 
